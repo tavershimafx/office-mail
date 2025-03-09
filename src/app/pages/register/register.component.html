@@ -1,0 +1,73 @@
+<div class="login-page">
+    <div class="action-area">
+        <div class="logo">
+            <img src="../../../assets/images/sr-logo.png" alt="logo">
+        </div>
+        <div class="login-form">
+            <form [formGroup]="loginForm" (submit)="submitLogin()">
+                <h1>Signup to SocialRepeat</h1>
+                <div class="form-row">
+                    <div class="form-col">
+                        <text-input placeholder="First name" formControlName="firstName" 
+                        [showValidation]="isSubmitting"
+                        [control]="loginForm.formControl('firstName')"
+                        type="text"></text-input>
+                    </div>
+                    <div class="form-col">
+                        <text-input placeholder="Last name" formControlName="lastName" 
+                        [showValidation]="isSubmitting"
+                        [control]="loginForm.formControl('lastName')"
+                        type="text"></text-input>
+                    </div>
+                </div>
+                <text-input placeholder="Email Address" formControlName="email" 
+                [showValidation]="isSubmitting"
+                [control]="loginForm.formControl('email')"
+                type="email"></text-input>
+                
+                <text-input placeholder="Company name" formControlName="companyName" 
+                [showValidation]="isSubmitting"
+                [control]="loginForm.formControl('companyName')"
+                type="text"></text-input>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <text-input placeholder="Country" formControlName="country" 
+                        [showValidation]="isSubmitting"
+                        [control]="loginForm.formControl('country')"
+                        type="text"></text-input>
+                    </div>
+                    <div class="form-col">
+                        <text-input placeholder="Phone" formControlName="phone" 
+                        [showValidation]="isSubmitting"
+                        [control]="loginForm.formControl('phone')"
+                        type="text"></text-input>
+                    </div>
+                </div>
+
+                <text-input placeholder="Password" formControlName="password" 
+                [showValidation]="isSubmitting"
+                [control]="loginForm.formControl('password')" type="password"></text-input>
+                <div class="login-actions">
+                    <button type="submit">Login <i class="zmdi zmdi-arrow-right"></i></button>
+                    <a routerLink="/forgot-password">Forgot your password?</a>
+                </div>
+            </form>
+            <button class="alt-action" type="button" (click)="login()">Create new Account</button>
+        </div>
+        <div class="bottom">
+            <div>
+                <a routerLink="">Terms and Conditions</a>
+                <span>&#x2022;</span>
+                <a routerLink="">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="art">
+        <div class="board">
+            Schedule posts and monitor success
+            <p class="sr">www.socialrepeat.com</p>
+            <p class="pb">#socialmedia #customhastag #latesttrend</p>
+        </div>
+    </div>
+</div>

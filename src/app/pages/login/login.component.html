@@ -1,0 +1,39 @@
+<div class="login-page">
+    <div class="action-area">
+        <div class="logo">
+            <img src="../../../assets/images/sr-logo.png" alt="logo">
+        </div>
+        <div class="login-form">
+            <form [formGroup]="loginForm" (submit)="submitLogin()">
+                <h1>Sign In</h1>
+                <text-input placeholder="Email Address" formControlName="email" 
+                [showValidation]="isSubmitting"
+                [control]="loginForm.formControl('email')"
+                type="email"></text-input>
+                
+                <text-input placeholder="Password" formControlName="password" 
+                [showValidation]="isSubmitting"
+                [control]="loginForm.formControl('password')" type="password"></text-input>
+                <div class="login-actions">
+                    <button type="submit">Login <i class="zmdi zmdi-arrow-right"></i></button>
+                    <a routerLink="/forgot-password">Forgot your password?</a>
+                </div>
+            </form>
+            <button class="alt-action" type="button" (click)="newAccount()">Create new Account</button>
+        </div>
+        <div class="bottom">
+            <div>
+                <a routerLink="">Terms and Conditions</a>
+                <span>&#x2022;</span>
+                <a routerLink="">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="art">
+        <div class="board">
+            Schedule posts and monitor success
+            <p class="sr">www.socialrepeat.com</p>
+            <p class="pb">#socialmedia #customhastag #latesttrend</p>
+        </div>
+    </div>
+</div>

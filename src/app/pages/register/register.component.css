@@ -1,0 +1,249 @@
+.login-page{
+    height: 100%;
+    width: 100%;
+}
+
+.login-page .action-area{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    padding: 40px;
+    background-color: #FFF;
+}
+
+.login-page .action-area .bottom span{
+    margin: 0 10px;
+}
+
+.login-page .action-area .logo{
+    width: 100%;
+}
+
+.login-page .action-area .logo img{
+    width: 25%;
+}
+
+.login-page .action-area .login-form{
+    width: 100%;
+    padding: 0 100px;
+}
+
+.action-area .login-form .form-row{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+
+.action-area .login-form .form-row .form-col{
+    width: 48%;
+}
+
+.login-page .action-area .login-form h1{
+    font-family: "Roboto-Medium";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login-page .action-area .login-form text-input{
+    display: block;
+    width: 100%;
+}
+
+.login-form .login-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form .login-actions button{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: "Roboto-Medium";
+    text-transform: uppercase;
+    background-color: #0057FF;
+}
+
+.login-form .login-actions button i{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a:active, a:link, a:visited{
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.login-form .alt-action{
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: "Roboto-Medium";
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+.login-page .art{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    left: 40%;
+    top: 0;
+    background-color: #FAFAFB;
+}
+
+.login-page .art .board{
+    position: relative;
+    width: 40%;
+    height: 440px;
+    background-size: cover;
+    margin: 20% auto;
+    background-image: url('../../../assets/images/Main_layout.png');
+    font-size: 68px;
+    font-family: 'Roboto-Bold';
+    font-weight: 800;
+    line-height: 1;
+    padding: 0 0 0 30px;
+    text-transform: capitalize;
+}
+
+.login-page .art .board p.sr{
+    position: absolute;
+    right: -50px;
+    margin: 0;
+    font-size: 12px;
+    transform: rotate(270deg);
+}
+
+.login-page .art .board p.pb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .login-page .art{
+        display: none;
+    }
+
+    .login-page .action-area{
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .login-page .action-area .bottom{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .login-page .action-area .bottom div{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .login-page .action-area .logo img{
+        width: 40%;
+    }
+
+    .login-page .action-area .login-form{
+        position: relative;
+        padding: 0;
+        margin-top: 100px;
+    }
+}
+
+/*********************************************************************/
+/******************************Tablets********************************/
+/*********************************************************************/
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    /*average tablets */
+    
+    .login-page .art{
+        display: none;
+    }
+
+    .login-page .action-area{
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .login-page .action-area .bottom{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .login-page .action-area .bottom div{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .login-page .action-area .login-form{
+        position: relative;
+        padding: 0 80px;
+        margin-top: 100px;
+    }
+}
+
+/*********************************************************************/
+/***************************Small Laptops*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 992px)and (max-width: 1199.98px) {
+    /* All small laptops*/
+
+    .login-page .action-area{
+        display: block;
+    }
+
+    .login-page .action-area .login-form{
+        position: relative;
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    .login-page .action-area .bottom{
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+/*********************************************************************/
+/**********************Average screens***********************/
+/*********************************************************************/
+@media only screen and (min-width: 1200px) and (max-width:1486px){
+    .login-page .action-area .login-form{
+        padding: 0 50px;
+    }
+}

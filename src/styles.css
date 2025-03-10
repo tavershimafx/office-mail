@@ -1,4 +1,8 @@
-@import url("./assets/material-design-iconic-font/css/material-design-iconic-font.min.css");
+
+@font-face{
+    src: url('/assets/fonts/MaterialSymbolsOutlined-Regular.ttf');
+    font-family: "MaterialSymbols";
+}
 @font-face{
     src: url('./assets/fonts/Roboto-Regular.ttf');
     font-family: "Roboto-Regular";
@@ -29,6 +33,7 @@
     font-family: "Roboto-Regular";
     font-weight: 200;
     font-size: 14px;
+    scrollbar-width: thin;
 }
 
 body, html{
@@ -36,4 +41,18 @@ body, html{
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+:root{
+    --theme-color: #5D5FEF;
+    --theme-light: #5d5fef13;
+    --theme-background: #F5F7FB;
+    --border-color: #C9C9C9;
+    --text-color: #303030;
+    --inactive-text: #888888;
+    --grey: #F0F0F0;
+    --pale: #F9F9F9;
+    --success: #3FB416;
+    --warning: #F2994A;
+    --brown: #AE924B;
 }

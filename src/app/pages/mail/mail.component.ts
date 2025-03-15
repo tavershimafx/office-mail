@@ -13,7 +13,7 @@ export class MailComponent implements OnDestroy, OnInit {
     {
       id: 1,
       profilePicture: "../../../assets/images/users/user-4.png",
-      sender: "Frank MUL",
+      sender: "Tavershima Ako",
       subject: "Invitation to the team event",
       message: `I am pleased to invite you all to our team building event that will be held next Friday, January 
       21st at 2 pm. The event will be held at the company's conference hall, we will have games`,

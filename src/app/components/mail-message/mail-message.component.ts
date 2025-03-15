@@ -1,4 +1,4 @@
-import { Component, Input  } from '@angular/core';
+import { Component  } from '@angular/core';
 import { LoadMessageService } from 'src/app/services/sidebar';
 
 @Component({

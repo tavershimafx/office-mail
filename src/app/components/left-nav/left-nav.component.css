@@ -91,6 +91,7 @@ ul a:active{
 
 ul.email-actions li:hover span, ul.email-actions li:hover a{
     color: var(--theme-color);
+    text-decoration: none;
 }
 
 div.labels{
@@ -141,4 +142,8 @@ ul.labels li a{
     width: 100%;
     padding: 15px 20px;
     font-size: 14px;
+}
+
+ul.labels li a:hover{
+    text-decoration: none;
 }

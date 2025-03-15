@@ -30,6 +30,7 @@ export class LoginComponent {
       return
     }
 
+    this.router.navigateByUrl("/mail")
   }
 
   newAccount(){

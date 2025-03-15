@@ -28,21 +28,6 @@
     font-family: "Roboto-Thin";
 }
 
-*{
-    box-sizing: border-box;
-    font-family: "Roboto-Regular";
-    font-weight: 200;
-    font-size: 14px;
-    scrollbar-width: thin;
-}
-
-body, html{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-}
-
 :root{
     --theme-color: #5D5FEF;
     --theme-light: #5d5fef13;
@@ -52,7 +37,33 @@ body, html{
     --inactive-text: #888888;
     --grey: #F0F0F0;
     --pale: #F9F9F9;
+    --light-text: #AEAEAE;
     --success: #3FB416;
     --warning: #F2994A;
     --brown: #AE924B;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto-Regular";
+    font-weight: 200;
+    font-size: 14px;
+    scrollbar-width: thin;
+    color: var(--text-color);
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a:link, a:active, a:visited{
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }

@@ -1,107 +1,11 @@
 <div class="mail-layout">
     <div class="navigation">
-        <div class="logo-actions">
-            <img src="../../../assets/images/ellipse-logo.png" alt="">
-            <div>
-                <p class="company">Office</p>
-                <p class="user">taver@shima.com</p>
-            </div>
-            <span><i class="zmdi zmdi-chevron-down"></i></span>
-        </div>
-        <div class="new-action">
-            <button><span class="material-symbols-outlined">add</span>New Message</button>
-        </div>
-        <ul class="email-actions">
-            <li>
-                <a routerLink="inbox">
-                    <span class="material-symbols-outlined">hard_drive</span> Inbox
-                    <!-- <i>8</i> -->
-                </a>
-            </li>
-            <li>
-                <a routerLink="inbox">
-                    <span class="material-symbols-outlined">send</span> Sent
-                </a>
-            </li>
-            <li>
-                <a routerLink="inbox">
-                    <span class="material-symbols-outlined">star</span> Favourite
-                </a>
-            </li>
-            <li>
-                <a routerLink="inbox">
-                    <span class="material-symbols-outlined">schedule</span> Snooze
-                </a>
-            </li>
-            <li>
-                <a routerLink="inbox">
-                    <span class="material-symbols-outlined">delete</span> Trash
-                </a>
-            </li>
-        </ul>
-        <div class="labels">
-            <p>labels</p>
-            <ul class="labels">
-                <li>
-                    <a routerLink=""><span class="">&#x2022;</span>Personal</a>
-                </li>
-                <li>
-                    <a routerLink=""><span class="">&#x2022;</span>School</a>
-                </li>
-                <li>
-                    <a routerLink=""><span class="">&#x2022;</span>Office</a>
-                </li>
-                <li>
-                    <a routerLink=""><span class="">&#x2022;</span>Social</a>
-                </li>
-                <li>
-                    <a routerLink=""><span class="material-symbols-outlined material">add</span>Add label</a>
-                </li>
-            </ul>
-        </div>
+        <left-nav></left-nav>
     </div>
     <div class="inbox">
-        <div class="inbox-head">
-            <h1>Inbox</h1>
-            <p>600 Messages</p>
-            <span>&#x2022;</span>
-            <p>50 Messages</p>
-            <div class="search">
-                <span class="material-symbols-outlined">search</span>
-                <input type="text" placeholder="Search">
-            </div>
-        </div>
-        <div class="inbox-tab-collection">
-            <div class="tab-headers">
-                <div class="head active">All messages</div>
-                <div class="head">Read</div>
-                <div class="head">Unread</div>
-            </div>
-            <div class="tabs">
-                <div class="tab">
-                    <div class="message-overview" *ngFor="let message of messages">
-                        <div class="meta">
-                            <img [src]="message.profilePicture" alt="user">
-                            <div class="title">
-                                <p>{{message.sender}}</p>
-                                <p>{{message.subject}}</p>
-                            </div>
-                            <p>{{message.date | date:"MMM yy"}}</p>
-                        </div>
-                        <div class="overview">
-                            <p>
-                                {{message.message}}
-                            </p>
-                        </div>
-                        <div class="media" *ngIf="message.attachments > 0">
-                            {{message.attachments}}<span class="material-symbols-outlined">attachment </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <inbox [messages]="messages"></inbox>
     </div>
     <div class="open-message">
-
+        <mail-message></mail-message>
     </div>
 </div>

@@ -1,0 +1,39 @@
+<div class="inbox-head">
+    <h1>Inbox</h1>
+    <p>600 Messages</p>
+    <span>&#x2022;</span>
+    <p>50 Messages</p>
+    <div class="search">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Search">
+    </div>
+</div>
+<div class="inbox-tab-collection">
+    <div class="tab-headers">
+        <div class="head active">All messages</div>
+        <div class="head">Read</div>
+        <div class="head">Unread</div>
+    </div>
+    <div class="tabs">
+        <div class="tab">
+            <div class="message-overview" *ngFor="let message of messages">
+                <div class="meta">
+                    <img [src]="message.profilePicture" alt="user">
+                    <div class="title">
+                        <p>{{message.sender}}</p>
+                        <p>{{message.subject}}</p>
+                    </div>
+                    <p>{{message.date | date:"MMM yy"}}</p>
+                </div>
+                <div class="overview">
+                    <p>
+                        {{message.message}}
+                    </p>
+                </div>
+                <div class="media" *ngIf="message.attachments > 0">
+                    {{message.attachments}}<span class="material-symbols-outlined">attachment </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

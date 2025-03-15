@@ -1,0 +1,144 @@
+.logo-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-actions div{
+    text-align: left;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.logo-actions div .company{
+    font-family: "Roboto-Bold";
+}
+
+.logo-actions i{
+    font-size: 18px;
+}
+
+.logo-actions p{
+    margin: 0;
+}
+
+.new-action{
+    margin: 30px 0 0 20px;
+}
+
+.new-action button{
+    background-color: var(--theme-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #FFF;
+}
+
+.new-action button span{
+    font-size: 24px;
+    margin-right: 10px;
+    color: #FFF;
+    vertical-align: middle;
+    font-family: "MaterialSymbols";
+}
+
+ul.email-actions{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul.email-actions li{
+    border-left: 3px solid transparent;
+}
+
+ul.email-actions li:hover{
+    border-left: 3px solid var(--theme-color);
+    background-color: var(--theme-light);
+}
+
+ul.email-actions li span{
+    margin-right: 15px;
+}
+
+ul.email-actions li a{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+ul.email-actions li a i{
+    text-align: right;
+}
+
+ul span, ul a{
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+ul.email-actions li span{
+    font-size: 24px;
+    vertical-align: middle;
+    font-family: "MaterialSymbols";
+}
+
+ul a:link, ul a:visited,
+ul a:active{
+    text-decoration: none;
+}
+
+ul.email-actions li:hover span, ul.email-actions li:hover a{
+    color: var(--theme-color);
+}
+
+div.labels{
+    margin-top: 20px;
+}
+
+div.labels p{
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+}
+
+ul.labels{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0;
+}
+
+ul.labels li span{
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 12px;
+    vertical-align: middle;
+}
+
+ul.labels li:nth-child(1) span{
+    color: var(--theme-color);
+}
+
+ul.labels li:nth-child(2) span{
+    color: var(--success);
+}
+
+ul.labels li:nth-child(3) span{
+    color: var(--warning);
+}
+
+ul.labels li:nth-child(4) span{
+    color: var(--brown);
+}
+
+ul.labels li span.material{
+    font-size: 18px;
+    font-family: "MaterialSymbols";
+}
+
+ul.labels li a{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+}

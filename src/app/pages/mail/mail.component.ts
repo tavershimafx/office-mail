@@ -1,14 +1,5 @@
 import { Component } from '@angular/core';
-
-interface IMailMessage{
-  profilePicture: string
-  sender: string
-  subject: string
-  message: string
-  date: string
-  isRead: boolean;
-  attachments: number
-}
+import { IMailMessage } from 'src/app/types/models';
 
 @Component({
   selector: 'mail',

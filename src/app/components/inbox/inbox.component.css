@@ -2,7 +2,17 @@
     padding: 20px;
 }
 
+.inbox-head .mb-menu{
+    display: none;
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 12px;
+    vertical-align: sub;
+    font-family: "MaterialSymbols";
+}
+
 .inbox-head h1{
+    display: inline-block;
     font-size: 22px;
     font-family: "Roboto-Bold";
 }
@@ -14,7 +24,7 @@
     font-size: 14px;
 }
 
-.inbox-head span:first-of-type{
+.inbox-head span.dot{
     font-size: 24px;
     line-height: 12px;
     margin: 0 10px;
@@ -31,7 +41,9 @@
 
 .inbox-head .search span{
     font-family: "MaterialSymbols";
+    vertical-align: middle;
     font-size: 24px;
+    margin: 0 10px;
 }
 
 .inbox-head .search input{
@@ -82,9 +94,9 @@
 }
 
 .message-overview .meta{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     margin-bottom: 10px;
     color: var(--text-color);
 }
@@ -97,6 +109,7 @@
 
 .message-overview .meta .title{
     width: 65%;
+    display: inline-block;
 }
 
 .message-overview .meta .title p{
@@ -113,6 +126,11 @@
 .message-overview .meta .title p:last-child{
     color: var(--text-color);
     font-size: 12px;
+}
+
+.message-overview .meta p:last-child{
+    display: inline-block;
+    margin: 0;
 }
 
 .message-overview .overview{
@@ -139,4 +157,15 @@
     color: var(--inactive-text);
     margin-left: 10px;
     vertical-align: sub;
+}
+
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .inbox-head .mb-menu{
+        display: inline-block;
+    }
 }

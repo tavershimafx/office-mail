@@ -1,11 +1,11 @@
 <div class="mail-layout">
-    <div class="navigation">
+    <div class="navigation" #sidebar>
         <left-nav></left-nav>
     </div>
-    <div class="inbox">
+    <div class="inbox" #inbox>
        <inbox [messages]="messages"></inbox>
     </div>
-    <div class="open-message">
+    <div class="open-message" #mailMsg>
         <mail-message></mail-message>
     </div>
 </div>

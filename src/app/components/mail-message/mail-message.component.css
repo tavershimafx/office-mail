@@ -1,3 +1,8 @@
+.message-actions{
+    display: flex;
+    flex-direction: column;
+}
+
 .sender-details{
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,10 @@
     margin: 0;
 }
 
+.sender-details .left div .mb-date{
+    display: none;
+}
+
 .sender-details .left div p:first-child{
     font-size: 16px;
     font-family: "Roboto-Bold";
@@ -40,6 +49,10 @@
     font-size: 12px;
 }
 
+.sender-details .right{
+  text-align: right;
+}
+
 .sender-details .right span:last-child{
     background-color: var(--grey);
     font-family: "MaterialSymbols";
@@ -49,16 +62,20 @@
     margin-left: 70px;
 }
 
-.message-actions{
+.email-tools{
     border-bottom: 1px solid var(--border-color);
     padding: 20px 20px;
     width: 100%;
 }
 
-.message-actions span{
+.email-tools span{
     font-family: "MaterialSymbols";
     font-size: 24px;
     padding: 10px 20px;
+}
+
+.email-tools span.mb-icon{
+    display: none;
 }
 
 .message-details{
@@ -87,6 +104,7 @@
     padding: 10px 20px 10px 10px;
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .message-details .attachments .attach-item div{
@@ -105,4 +123,61 @@
     font-size: 16px;
     padding: 10px 12px;
     vertical-align: super;
+}
+
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .message-actions .sender-details{
+        order: 2;
+    }
+
+    .message-actions .email-tools{
+        order: 1;
+    }
+
+    .email-tools span.mb-icon{
+        display: inline;
+    }
+
+    .sender-details{
+        padding: 20px 20px;
+    }
+
+    .email-tools{
+        padding: 10px 10px;
+    }
+
+    .email-tools span{
+        font-size: 24px;
+        padding: 10px 10px;
+    }
+
+    .sender-details .left div{
+        vertical-align: sub;
+    }
+
+    .sender-details .left div p:first-child{
+        margin-bottom: 0;
+    }
+
+    .sender-details .left div .mb-date{
+        display: block;
+    }
+
+    .sender-details .right span:last-child{
+        margin-left: 10px;
+    }
+
+    .sender-details .right span:first-child{
+        display: none;
+    }
+
+    .message-details{
+        padding: 20px;
+    }
 }

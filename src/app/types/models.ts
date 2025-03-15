@@ -5,5 +5,6 @@ export interface IMailMessage{
   message: string
   date: string
   isRead: boolean;
-  attachments: number
+  attachments: number;
+  id: number
 }

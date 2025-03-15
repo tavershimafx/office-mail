@@ -8,6 +8,7 @@
     height: 100%;
     width: 15%;
     background-color: var(--theme-background);
+    transition: all 0.5s ease-in-out;
 }
 
 .mail-layout .inbox{
@@ -17,6 +18,8 @@
     width: 20%;
     left: 15%;
     border-right: 1px solid var(--border-color);
+    background-color: #FFF;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -26,3 +29,69 @@
     height: 100%;
     right: 0;
 }
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .mail-layout .navigation{
+        left: -60%;
+        width: max-content;
+        z-index: 12;
+    }
+    
+    .mail-layout .inbox{
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .mail-layout .open-message{
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+}
+
+/*********************************************************************/
+/******************************Tablets********************************/
+/*********************************************************************/
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    /*All tablets */
+
+}
+
+@media only screen and (min-width: 576px) and (orientation:portrait){
+    /*small pablets */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 767.98px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 991.98px) {
+    /*specific pablets */
+}
+
+
+/*********************************************************************/
+/***************************Small Laptops*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 992px)and (max-width: 1199.98px) {
+    /* All small laptops*/
+
+}
+
+
+
+/*********************************************************************/
+/**********************Bigger screens/smart TVs***********************/
+/*********************************************************************/
+@media only screen and (min-width: 1200px) {}

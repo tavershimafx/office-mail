@@ -5,12 +5,14 @@ import { FormsModule } from "@angular/forms";
 import { LeftNavComponent } from "./left-nav/left-nav.component";
 import { InboxComponent } from "./inbox/inbox.component";
 import { MailMessageComponent } from "./mail-message/mail-message.component";
+import { InboxDirective } from "./directives/inbox.directive";
 
 const components = [
     TextInputComponent,
     LeftNavComponent,
     InboxComponent,
-    MailMessageComponent
+    MailMessageComponent,
+    InboxDirective
 ]
 
 @NgModule({

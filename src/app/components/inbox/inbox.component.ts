@@ -1,4 +1,5 @@
 import { Component, Input  } from '@angular/core';
+import { SidebarService } from 'src/app/services/sidebar';
 import { IMailMessage } from 'src/app/types/models';
 
 
@@ -11,8 +12,11 @@ export class InboxComponent {
 
   @Input() messages?: IMailMessage[]
   
-  constructor(){
+  constructor(private sidebarService: SidebarService){
    
   }
 
+  toggleSidebar(){
+    this.sidebarService.toggleSidebar()
+  }
 }

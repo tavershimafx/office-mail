@@ -1,7 +1,9 @@
 <div class="inbox-head">
-    <h1>Inbox</h1>
+    <div>
+        <span class="material-symbols-outlined mb-menu" (click)="toggleSidebar()">menu</span><h1>Inbox</h1>
+    </div>
     <p>600 Messages</p>
-    <span>&#x2022;</span>
+    <span class="dot">&#x2022;</span>
     <p>50 Messages</p>
     <div class="search">
         <span class="material-symbols-outlined">search</span>
@@ -16,7 +18,7 @@
     </div>
     <div class="tabs">
         <div class="tab">
-            <div class="message-overview" *ngFor="let message of messages">
+            <div class="message-overview" *ngFor="let message of messages" [inboxMessage]="message.id">
                 <div class="meta">
                     <img [src]="message.profilePicture" alt="user">
                     <div class="title">

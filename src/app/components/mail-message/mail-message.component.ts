@@ -1,4 +1,5 @@
 import { Component, Input  } from '@angular/core';
+import { LoadMessageService } from 'src/app/services/sidebar';
 
 @Component({
   selector: 'mail-message',
@@ -7,8 +8,11 @@ import { Component, Input  } from '@angular/core';
 })
 export class MailMessageComponent {
 
-  constructor(){
+  constructor(private messageService: LoadMessageService){
    
   }
 
+  inbox(){
+    this.messageService.loadMessage(0)
+  }
 }
